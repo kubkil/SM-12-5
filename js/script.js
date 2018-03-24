@@ -5,6 +5,12 @@ $(function() {
   const tweetLink = "https://twitter.com/intent/tweet?text=";
   const quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
+  function getQuote() {
+    // pierwszy parametr - link do API, drugi - wykonywana funkcja
+    $.getJSON(prefix + quoteUrl, createTweet);
+    $.ajaxSetup({ cache: false });
+  }
+
   // co wskakuje jako argument 'input'?
   function createTweet(input) {
     let data = input[0];
@@ -30,12 +36,6 @@ $(function() {
       $('.tweet').attr('href', tweet);
     }
    }
-
-  function getQuote() {
-    // pierwszy parametr - link do API, drugi - wykonywana funkcja
-    $.getJSON(prefix + quoteUrl, createTweet);
-    $.ajaxSetup({ cache: false });
-  }
 
   $('.trigger').click(function () {
     getQuote();
