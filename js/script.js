@@ -1,14 +1,14 @@
 $(function() {
 
   // linki - podwójne cytaty? If you are constructing html from strings, either use " instead of ' for attribute quotes, or add an extra layer of encoding (' can be encoded as %27).
-  const prefix = "https://cors-anywhere.herokuapp.com/";
+  // const prefix = "https://cors-anywhere.herokuapp.com/";
   const tweetLink = "https://twitter.com/intent/tweet?text=";
   const quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
   function getQuote() {
     // pierwszy parametr - link do API, drugi - wykonywana funkcja
-    $.getJSON(prefix + quoteUrl, createTweet);
-    $.ajaxSetup({ cache: false });
+    $.getJSON(quoteUrl, createTweet);
+    // $.ajaxSetup({ cache: false });
   }
 
   // co wskakuje jako argument 'input'?
@@ -40,6 +40,7 @@ $(function() {
   $('.trigger').click(function () {
     getQuote();
   });
+
   getQuote();
 
 }); // END DOCUMENT READY
