@@ -8,7 +8,7 @@ $(function() {
   function getQuote() {
     // pierwszy parametr - link do API, drugi - wykonywana funkcja
     $.getJSON(prefix + quoteUrl, createTweet);
-    // $.ajaxSetup({ cache: false });
+    $.ajaxSetup({ cache: false });
   }
 
   // co wskakuje jako argument 'input'?
