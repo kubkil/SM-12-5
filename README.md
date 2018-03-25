@@ -10,3 +10,5 @@ https://kubkil.github.io/SM-12-5/
 - linia 14 - input[0] bo w obiekcie 0 są ID, content, link, title i zamiast 'data.title' może być 'input[0].title' gdyby nie było przypisane do zmiennej? 
 np.
 https://scr.hu/AwOn67
+
+- linia 16 - eslint wywalił błąd, że powinno być 'let', słusznie?
