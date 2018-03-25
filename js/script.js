@@ -15,7 +15,7 @@
     // data.content ?
     // data.content - kod HTML paragrafu; tworzymy element HTML z tego kodu, za pomocą text() wyciągamy zawartość tekstową i ucinamy spacje (trim())
     const quoteText = $(data.content).text().trim();
-    const quoteAuthor = data.title;
+    let quoteAuthor = data.title; // const? eslint error
     const tweetText = 'Quote of the day - ' + quoteText + ' Author: ' + quoteAuthor;
     // .length - the number of elements currently matched. If (true) czyli jeśli jest 0, zamienia na true i warunek jest spełniony
     if (!quoteAuthor.length) {
