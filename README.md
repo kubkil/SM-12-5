@@ -9,9 +9,4 @@ https://kubkil.github.io/SM-12-5/
 
 - linia 14 - input[0] bo w obiekcie 0 są ID, content, link, title i zamiast 'data.title' może być 'input[0].title' gdyby nie było przypisane do zmiennej? 
 np.
-[,…]
-0: {ID: 1755, title: "Pablo del Valle", content: "<p>My eyes hurt, but my hand keeps sketching.</p>↵",…}
-ID: 1755
-content: "<p>My eyes hurt, but my hand keeps sketching.</p>↵"
-link: "https://quotesondesign.com/pablo-del-valle/"
-title: "Pablo del Valle"
+https://scr.hu/AwOn67
