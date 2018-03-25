@@ -1,5 +1,3 @@
-$(function() {
-
   // linki - podwójne cytaty? If you are constructing html from strings, either use " instead of ' for attribute quotes, or add an extra layer of encoding (' can be encoded as %27).
   const prefix = "https://cors-anywhere.herokuapp.com/";
   const tweetLink = "https://twitter.com/intent/tweet?text=";
@@ -37,14 +35,13 @@ $(function() {
     }
    }
 
+$(function() {
   $('.trigger').click(function () {
     getQuote();
   });
 
   getQuote();
-
-}); // END DOCUMENT READY
-
+});
 // $(function() {
 
 //   function getJoke() {
